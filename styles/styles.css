@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--color_principal);
+}
+
+* {
+    background: none;
+}
+
+:root {
+    --color_principal: #222222;
+    --color_secundario: #000;
+    --color_tercero: #ffff;
+    --color_cuarto:rgba(218, 37, 6, 0.884);
+    --fuente_principal: 'Roboto', sans-serif;
+    --fuente_secundaria: 'Roboto Mono', monospace;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color_tercero);
+    cursor: pointer;
+    background: none;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: var(--color_cuarto);
+}
+
+ul, li {
+    list-style: none;
+    background: none;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--color_secundario);
+}
+
+nav {
+    background: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav h1 {
+    background: none;
+    color: var(--color_tercero);
+    font-family: var(--fuente_principal);
+}
+
+nav ul {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    font-family: var(--fuente_secundaria);
+}
+
+/* BODY */
+body {
+    background: var(--color_principal) url('../assets/mapa.png') no-repeat center center fixed;
+    background-size: 70%;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+main section.info {
+    color: var(--color_tercero);
+    text-align: center;
+}
+
+section.info h2 {
+    font-size: 2.2em;
+    font-family: var(--fuente_principal);
+}
+
+section.info p {
+    font-family: var(--fuente_secundaria);
+    font-size: 1.2em;
+}
+
+section.info p span {
+    color: var(--color_cuarto);
+    margin-left: 40px;
+}
+
+main section.form__contact form {
+    width: 750px;
+    margin-top: 50px;
+    font-family: var(--fuente_secundaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section.form__contact form button {
+    margin-top: 25px;
+    border: none;
+    background: var(--color_cuarto);
+    padding: 10px;
+    cursor: pointer;
+    color: var(--color_tercero);
+    font-family: var(--fuente_principal);
+    border-radius: 5px;
+    transition: transform 0.5s;
+}
+
+main section.form__contact form button:hover {
+    transform: scale(1.1);
+}
+
+section.form__contact form div.form-contact__container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+section.form__contact form div.form-contact__container textarea {
+    width: 43%;
+    background-color: var(--color_tercero);
+    border-radius: 5px;
+    resize: none;
+    color: var(--color_principal);
+    padding: 10px;
+}
+
+section.form__contact form div.form-contact__container div.form-container__inputs {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    justify-content: space-between;
+}
+
+section.form__contact form div.form-contact__container div.form-container__inputs input {
+    height: 40px;
+    background-color: var(--color_tercero);
+    border-radius: 5px;
+    border: none;
+    color: var(--color_principal);
+    padding-left:10px;
+}
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: var(--color_secundario);
+    color: var(--color_tercero);
+    padding: 2px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    font-family: var(--fuente_secundaria);
+    font-size: 1.2em;
+}
+
