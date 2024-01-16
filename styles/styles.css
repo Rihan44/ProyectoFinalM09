@@ -162,6 +162,63 @@ section.form__contact form div.form-contact__container div.form-container__input
     padding-left:10px;
 }
 
+/* PRIVACIDAD */
+main.main__privacidad{
+    margin-top: 20px;
+}
+
+main section.info__privacidad {
+    text-align: center;
+}
+
+main section.info__privacidad h2{
+    color: var(--color_tercero);
+    font-size: 2.2em;
+    font-family: var(--fuente_principal);
+}
+
+main section.info__privacidad div.info__politica {
+    background: var(--color_tercero);
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 11px 10px 5px 0px rgba(0,0,0,0.75);
+    padding: 5px;
+}
+
+main section.info__privacidad div.info__politica h3 {
+    color: var(--color_cuarto);
+    font-family: var(--fuente_principal);
+    font-size: 1.5em;
+}
+
+main section.info__privacidad div.info__politica p {
+    font-size: 1em;
+    text-align: start;
+    width: 70%;
+    margin: 0 auto;
+    font-family: var(--fuente_secundaria);
+}
+
+main section.info__privacidad div.info__politica nav.info__menu ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    list-style: circle;
+    margin-bottom: 20px;
+}
+
+main section.info__privacidad div.info__politica nav.info__menu ul li {
+    font-weight: bold;
+    text-align: start;
+    margin: 5px;
+    width: 100%;
+    font-family: var(--fuente_secundaria);
+    list-style: circle;
+    margin-left: 250px;
+}
 
 /* FOOTER */
 
