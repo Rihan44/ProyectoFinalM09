@@ -233,7 +233,7 @@ main.main__blog h2 {
 }
 
 main.main__blog section.blog {
-    height: 72vh;
+    height: 66vh;
     overflow-y: scroll;
     border: 3px solid black;
     background-color: var(--color_tercero);
@@ -364,7 +364,7 @@ main.main__noticia h2 {
 }
 
 main.main__noticia section.noticia {
-    height: 72vh;
+    height: 62vh;
     overflow-y: scroll;
     border: 3px solid black;
     background-color: var(--color_tercero);
