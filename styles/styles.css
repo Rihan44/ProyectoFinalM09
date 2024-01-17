@@ -41,7 +41,7 @@ ul, li {
 /* HEADER */
 header {
     width: 100%;
-    padding: 20px;
+    padding: 5px;
     background-color: var(--color_secundario);
 }
 
@@ -50,6 +50,7 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 nav h1 {
@@ -83,7 +84,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 main section.info {
@@ -219,6 +220,136 @@ main section.info__privacidad div.info__politica nav.info__menu ul li {
     list-style: circle;
     margin-left: 250px;
 }
+
+/* BLOG */
+main.main__blog {
+    margin-top: 20px;
+}
+
+main.main__blog h2 {
+    font-size: 2.2em;
+    font-family: var(--fuente_principal);
+    color: var(--color_tercero);
+}
+
+main.main__blog section.blog {
+    height: 72vh;
+    overflow-y: scroll;
+    border: 3px solid black;
+    background-color: var(--color_tercero);
+    border-radius: 5px;
+    box-shadow: 11px 10px 5px 0px rgba(0,0,0,0.75);
+    padding: 10px;
+    width: 1200px;
+}
+
+main.main__blog section.blog h3 {
+    font-size: 1.9em;
+    text-align: center;
+    font-family: var(--fuente_principal);
+    margin: 10px;
+    margin-bottom: 25px;
+}
+
+main.main__blog section.blog div.noticias {
+    display: flex;
+    justify-content: space-around;
+}
+
+main.main__blog section.blog div.noticias div.noticias__container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+}
+
+main.main__blog section.blog div.noticias div.noticias__relevantes {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    align-items: center;
+}
+
+main.main__blog section.blog div.noticias div.noticias__relevantes div.noticia__relevantes {
+    width: 100%;
+    display: flex;
+}
+
+main.main__blog section.blog div.noticias div.noticias__relevantes div.noticia__relevantes {
+    background-size: cover;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 11px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+main.main__blog section.blog div.noticias div.noticias__relevantes div.noticia__relevantes p {
+    font-family: var(--fuente_secundaria);
+    color: var(--color_tercero);
+    font-weight: bold;
+    align-self: end;
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1.2em;
+}
+
+main.main__blog section.blog div.noticias div.noticias__relevantes div.noticia__relevantes:nth-child(1) {
+    background-image: url('../assets/relevante1.jpeg');
+    margin-bottom: 80px;
+}
+
+main.main__blog section.blog div.noticias div.noticias__relevantes div.noticia__relevantes:nth-child(2) {
+    background-image: url('../assets/relevante2.jpeg');
+}
+
+main.main__blog section.blog div.noticias div.noticias__container div.noticia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    justify-content: center;
+    height: 250px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    box-shadow: 6px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+main.main__blog section.blog div.noticias div.noticias__container div.noticia p {
+    font-family: var(--fuente_secundaria);
+    color: var(--color_cuarto);
+    font-weight: bold;
+    align-self: start;
+    margin-left: 50px;
+}
+
+main.main__blog section.blog div.noticias div.noticias__container div.noticia div.caja__noticia {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 25px;
+}
+
+main.main__blog section.blog div.noticias div.noticias__container div.noticia div.caja__noticia img {
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 6px 4px 5px 0px rgba(0,0,0,0.75);
+    margin-top: 10px;
+}
+
+main.main__blog section.blog div.noticias div.noticias__container div.noticia div.caja__noticia h4 {
+    width: 60%;
+    font-family: var(--fuente_secundaria);
+}
+
+main.main__blog section.blog div.noticias div.noticias__container div.noticia div.caja__noticia h4 a {
+    color: var(--color_secundario);
+    transition: color 0.3s;
+}
+
+main.main__blog section.blog div.noticias div.noticias__container div.noticia div.caja__noticia h4 a:hover {
+    color: var(--color_cuarto);
+}
+
 
 /* FOOTER */
 
